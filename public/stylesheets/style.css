@@ -1,29 +1,29 @@
 .sidebar-nav {
   margin-top: 20px;
-  height: 600px;
-  padding: 0;
-  list-style: none;
+  height: 800px;
+  padding: 1px;
+  list-style:none;
   background-color: rgb(199, 194, 196);
   border-style: solid;
   border-width: 1px;
-  border-color: rgb(33, 32, 32);
+  border-color: rgb(0, 0, 0);
 }
 
 body
 {
-  background-color: wheat;
+  background-color:grey;
 }
 .article
 {
   background-color: rgb(240, 236, 243);
   margin-top: 20px;
-  height: 600px;
+  height: 800px;
   overflow-y: scroll;
   padding: 10px;
 }
 
 a{
-  color: rgb(35, 6, 163);
+  color: rgb(175, 5, 99);
   background-color: transparent;
   text-decoration: none;
 }
