@@ -1,0 +1,35 @@
+.sidebar-nav {
+  margin-top: 20px;
+  height: 600px;
+  padding: 0;
+  list-style: none;
+  background-color: rgb(199, 194, 196);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(33, 32, 32);
+}
+
+body
+{
+  background-color: wheat;
+}
+.article
+{
+  background-color: rgb(240, 236, 243);
+  margin-top: 20px;
+  height: 600px;
+  overflow-y: scroll;
+  padding: 10px;
+}
+
+a{
+  color: rgb(35, 6, 163);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(14, 82, 5);
+  background-color: transparent;
+  text-decoration: underline;
+}
