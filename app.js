@@ -17,7 +17,10 @@ var app = express();
 //Set up mongoose connection
 var mongoose = require('mongoose');
 //Online version(atlas): var mongoDB = 'mongodb+srv://leonk:jb4R228dvxrtHKD@cluster0.y9k4n.mongodb.net/local_library?retryWrites=true&w=majority';
-var mongoDB = 'mongodb://127.0.0.1:27017/local_library';
+// Set up mongoose connection
+var dev_db_url = 'mongodb+srv://cooluser:coolpassword@cluster0.y9k4n.mongodb.net/local_library?retryWrites=true&w=majority';
+var mongoDB = process.env.MONGODB_URI || dev_db_url;
+
 mongoose.connect(mongoDB, { useNewUrlParser: true , useUnifiedTopology: true});
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
