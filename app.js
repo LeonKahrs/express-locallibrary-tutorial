@@ -18,7 +18,7 @@ var app = express();
 var mongoose = require('mongoose');
 //Online version(atlas): var mongoDB = 'mongodb+srv://leonk:jb4R228dvxrtHKD@cluster0.y9k4n.mongodb.net/local_library?retryWrites=true&w=majority';
 // Set up mongoose connection
-var dev_db_url = 'mongodb+srv://cooluser:coolpassword@cluster0.y9k4n.mongodb.net/local_library?retryWrites=true&w=majority';
+var dev_db_url = 'mongodb+srv://leonk:jb4R228dvxrtHKD@cluster0.y9k4n.mongodb.net/local_library?retryWrites=true&w=majority';
 var mongoDB = process.env.MONGODB_URI || dev_db_url;
 
 mongoose.connect(mongoDB, { useNewUrlParser: true , useUnifiedTopology: true});
